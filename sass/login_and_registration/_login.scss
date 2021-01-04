@@ -1,10 +1,10 @@
 .loginbox {
-    width: 320px;
     height: 470px;
-    background: #000;
-    color: #fff;
-    top: 50%;
-    left: 50%;
+    width: $box-width;
+    background: $black-background;
+    color: $color-white;
+    top: $box-top;
+    left: $box-left;
     position: absolute;
     transform: translate(-50%, -50%);
     box-sizing: border-box;
@@ -24,7 +24,7 @@
     input[type="text"],
     input[type="password"] {
         border: none;
-        border-bottom: 1px solid #fff;
+        border-bottom: 1px solid $color-white;
         background: transparent;
         outline: none;
         height: 40px;

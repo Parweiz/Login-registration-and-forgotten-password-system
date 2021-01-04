@@ -1,4 +1,7 @@
-.container-contact100 {
+// https://colorlib.com/wp/template/contact-form-v10/
+
+/*-----------------------------CONTACT-------------------------------------*/
+.contactpage {
     width: 100%;
     min-height: 100vh;
     display: -webkit-box;
@@ -11,23 +14,17 @@
     align-items: center;
     padding: 15px;
     position: relative;
-    background-color: #f2f2f2;
+    background-color: $contactpage-color
 }
 
-.wrap-contact100 {
+.wrap-contactpage {
     width: 550px;
     background: transparent;
     padding: 50px 0px 160px 0px;
 }
 
-/*------------------------------------------------------------------*/
-.contact100-form {
-    width: 100%;
-}
-
-.contact100-form-title {
+.title {
     display: block;
-    font-family: Ubuntu-Bold;
     font-size: 30px;
     color: #403866;
     line-height: 1.2;
@@ -36,8 +33,8 @@
     padding-bottom: 49px;
 }
 
-/*------------------------------------------------------------------*/
-.wrap-input100 {
+/*--------------------------------INPUT FIELDS ----------------------------------*/
+.wrap-input {
     width: 100%;
     background-color: #fff;
     border-radius: 31px;
@@ -46,31 +43,30 @@
     z-index: 1;
 }
 
-.input100 {
+.input {
     position: relative;
     display: block;
     width: 100%;
     background: #fff;
     border-radius: 31px;
-    font-family: Ubuntu-Bold;
     font-size: 18px;
     color: #8f8fa1;
     line-height: 1.2;
 }
 
-/*------------------------------------------------------------------*/
-input.input100 {
+input.input {
     height: 62px;
     padding: 0 35px 0 35px;
 }
 
-textarea.input100 {
+textarea.input {
     min-height: 169px;
     padding: 19px 35px 0 35px;
 }
 
-/*------------------------------------------------------------------*/
-.focus-input100 {
+/*------------------------------FOCUS INPUT------------------------------------*/
+
+.focus-input {
     display: block;
     position: absolute;
     z-index: -1;
@@ -86,19 +82,19 @@ textarea.input100 {
     border-radius: 31px;
     background-color: #fff;
     pointer-events: none;
-
     -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
     -moz-transition: all 0.4s;
     transition: all 0.4s;
 }
 
-.input100:focus+.focus-input100 {
+.input:focus+.focus-input {
     width: calc(100% + 20px);
 }
 
-/*------------------------------------------------------------------*/
-.container-contact100-form-btn {
+
+/*----------------------------BUTTON DESIGN--------------------------------------*/
+.container-contact-btn {
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -109,7 +105,7 @@ textarea.input100 {
     padding-top: 10px;
 }
 
-.contact100-form-btn {
+.btn {
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -123,7 +119,6 @@ textarea.input100 {
     background-color: transparent;
     border-radius: 31px;
 
-    font-family: Ubuntu-Bold;
     font-size: 16px;
     color: #fff;
     line-height: 1.2;
@@ -137,7 +132,7 @@ textarea.input100 {
     z-index: 1;
 }
 
-.contact100-form-btn::before {
+.btn::before {
     content: "";
     display: block;
     position: absolute;
@@ -161,7 +156,7 @@ textarea.input100 {
     transition: all 0.4s;
 }
 
-.contact100-form-btn:hover:before {
+.btn:hover:before {
     background-color: #403866;
     width: calc(100% + 20px);
 }

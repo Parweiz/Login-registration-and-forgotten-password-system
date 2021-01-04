@@ -1,16 +1,22 @@
 $logo-red: #db3236;
 $logo-green: #3cba54;
+$placeholder-color: #bdbdd3;
+$contactpage-color: #f2f2f2;
 $fontSize-large: large;
 $fontSize-Xlarge: x-large;
 $fontSize-XXlarge: xx-large;
+$box-top: 50%;
+$box-left: 50%;
+$color-white: #fff;
+$black-background: #000;
+$box-width: 320px;
 
 body {
     margin: 0;
     padding: 0;
-    background: url(../img/coffee.jpg);
-    background-size: 100%;
     list-style: none;
     text-decoration: none;
+
 }
 
 h1 {
@@ -113,38 +119,10 @@ input:focus {
     border-color: transparent !important;
 }
 
-input::-webkit-input-placeholder {
-    color: #bdbdd3;
+input::placeholder {
+    color: $placeholder-color
 }
 
-input:-moz-placeholder {
-    color: #bdbdd3;
-}
-
-input::-moz-placeholder {
-    color: #bdbdd3;
-}
-
-input:-ms-input-placeholder {
-    color: #bdbdd3;
-}
-
-textarea::-webkit-input-placeholder {
-    color: #bdbdd3;
-}
-
-textarea:-moz-placeholder {
-    color: #bdbdd3;
-}
-
-textarea::-moz-placeholder {
-    color: #bdbdd3;
-}
-
-textarea:-ms-input-placeholder {
-    color: #bdbdd3;
-}
-
-.form-gap {
-    padding-top: 70px;
+textarea::placeholder {
+    color: $placeholder-color
 }

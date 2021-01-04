@@ -10,19 +10,16 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
     <link rel="icon" type="image/png" href="img/fcb.png" />
 
     <link rel="stylesheet" type="text/css" href="dist/css/style.css" />
 </head>
 
-<body>
+<body style="background-image: url(img/coffee.jpg); background-size: 100%;">
 
     <header>
         <nav>
-            <ul class="topnav">
+            <ul class=" topnav">
 
                 <li><a class="<?php if ($page == 'index') {
                                     echo 'active';
